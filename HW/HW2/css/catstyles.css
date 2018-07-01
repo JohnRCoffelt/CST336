@@ -1,0 +1,47 @@
+body {
+    background-color: darkgreen;
+    color: white;
+}
+
+input{
+    top:70%;
+    left: 40%;
+    width: 353px;
+    position:absolute;
+    font-size:1.3em;
+    background-color: cyan;
+    font-weight:bold;
+    color:black;
+    cursor:pointer;
+}
+
+#divCatBody {
+    z-index: 1;
+    top:10%;
+    left:40%;
+    position: fixed
+}
+
+#divCatEyes {
+    z-index: 2;
+    top:10%;
+    left:40%;
+    position: fixed
+}
+
+#divCatFeature {
+    z-index: 3;
+    top:10%;
+    left:40%;
+    position: fixed
+}
+
+footer{
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size:.8em;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    padding-top:10px;
+    text-align: center;
+}
