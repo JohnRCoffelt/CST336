@@ -40,7 +40,7 @@ include 'inc/functions.php';
                 
                 Eye Color: <br>
                 <select name="eyeColor" id="eyeColor">
-                        <option value="White" <?php isSelectedEyeColor("White");?> >White</option>
+                        <option value="Blue" <?php isSelectedEyeColor("Blue");?> >Blue</option>
                         <option value="Grey" <?php isSelectedEyeColor("Grey");?> >Grey</option>
                         <option value="Brown" <?php isSelectedEyeColor("Brown");?> >Brown</option>
                         <option value="Hazel" <?php isSelectedEyeColor("Hazel");?> >Hazel</option>
