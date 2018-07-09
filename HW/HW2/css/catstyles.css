@@ -4,7 +4,11 @@ body {
 }
 
 input{
+<<<<<<< HEAD
     top:70%;
+=======
+    top:60%;
+>>>>>>> 354aa1d3f0166651d289af1170dafadc53ad1d1e
     left: 40%;
     width: 353px;
     position:absolute;
@@ -44,4 +48,8 @@ footer{
     bottom: 0%;
     padding-top:10px;
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 354aa1d3f0166651d289af1170dafadc53ad1d1e
