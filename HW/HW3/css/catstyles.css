@@ -1,0 +1,71 @@
+header {
+    font-family: "Times New Roman", Georgia, Serif;
+    position: static;
+    padding-top:10px;
+    text-align: center; 
+}
+
+body {
+    background-color: #0093D0;
+}
+
+#main {
+    position: static;
+}
+
+#form {
+    font-family: "Times New Roman", Georgia, Serif;
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+
+#divCatBody {
+    z-index: 1;
+    border: solid;
+    background: url('../img/blankcat.png') no-repeat;
+    background-size: cover;
+    top: 150px;
+    left: 650px;
+    position: fixed;
+}
+
+#divCatEyes {
+    z-index: 3;
+    top: 150px;
+    left: 650px;
+    position: fixed;
+}
+
+#divCatFeature {
+    z-index: 2;
+    top: 154px;
+    left: 653px;
+    position: fixed;
+}
+
+#divCatCollar {
+    z-index: 4;
+    top: 154px;
+    left: 653px;
+    position: fixed;
+}
+
+#divCatName {
+    font-family: "Gaegu";
+    font-size:2em;
+    top:550px;
+    left: 650px;
+    width: 270px;
+    position: fixed;
+}
+
+footer{
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size:.8em;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    padding-top:10px;
+    text-align: center;
+}
