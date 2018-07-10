@@ -1,16 +1,15 @@
 header {
-    font-family: "Times New Roman", Georgia, Serif;
-    position: static;
+    font-family: "Gaegu";
+    font-size: 1.3em;
+    position: relative;
     padding-top:10px;
     text-align: center; 
 }
 
 body {
     background-color: #0093D0;
-}
-
-#main {
-    position: static;
+    height: 800px;
+    position: relative;
 }
 
 #form {
@@ -64,6 +63,7 @@ footer{
     font-family: "Times New Roman", Georgia, Serif;
     font-size:.8em;
     position: absolute;
+    z-index: -1;
     width: 100%;
     bottom: 0%;
     padding-top:10px;

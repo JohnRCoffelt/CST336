@@ -8,7 +8,7 @@ include 'inc/functions.php';
         <title> Cat Creator </title>
         <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
         <style>
-            @import url("css/catstyles.css");
+            @import url("css/catstyles1.css");
         </style>
     </head>
 
