@@ -1,0 +1,26 @@
+h1 {
+    font-family: "Lucida Console";
+    font-size:1.55em;
+    text-align: center;
+}
+
+body {
+    background-color: #0080FF;
+}
+
+#form {
+    font-family: "Lucida";
+    font-size:1.1em;
+    position: relative;
+    left: 40%;
+}
+
+footer{
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size:.8em;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    bottom: 0%;
+    text-align: center;
+}

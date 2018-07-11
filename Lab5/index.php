@@ -37,6 +37,11 @@ function displaySearchResults() {
             $namedParameters[":categoryId"] = $_GET['category'];
         }
         
+        if (!empty($_GET['description'])) {
+            $sql .= " AND productDescription LIKE :description";
+            $namedParameters[":description"] = "%" . $_GET['description'] . "%";
+        }
+        
         if (!empty($_GET['priceFrom'])) {
             $sql .= " AND price >= :priceFrom";
             $namedParameters[":priceFrom"] = $_GET['priceFrom'];
@@ -73,14 +78,16 @@ function displaySearchResults() {
 <html>
     <head>
         <title> OtterMart Product Search</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="css/lab5styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div>
             <h1> OtterMart Product Search </h1>
-            
-            <form>
+            <hr>
+            <form id="form">
                 Product: <input type="text" name="product" />
+                <br>
+                Description: <input type="text" name="description" />
                 <br>
                 Category:
                     <select name="category">
@@ -98,11 +105,20 @@ function displaySearchResults() {
                 <input type="radio" name="orderBy" value="name"/> Name
                 
                 <br /><br />
-                <input type="submit" value="Search" name="searchForm" />
+                <input id="submit" type="submit" value="Search" name="searchForm" />
             </form>
             <br />
         </div>
         <hr>
         <?=displaySearchResults() ?>
+        
+        <footer>
+            <hr>
+            CSUMB CST 336. 2018&copy; Coffelt <br />
+            <strong>Disclaimer:</strong> The information in this webpage
+            is fictitious. <br />
+            It is used for academic purposes only.<br />
+            <img src="img/logo.png" alt="Picture of CSUMB logo"/>
+        </footer>
     </body>
 </html>
