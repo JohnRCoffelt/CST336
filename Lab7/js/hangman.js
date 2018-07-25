@@ -101,6 +101,7 @@ function updateMan() {
 
 function endGame(win) {
     $("#letters").hide();
+    $(".hintbtn").hide();
     
     if(win) {
         $('#won').show();
