@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link  href="css/style.css" rel="stylesheet" type="text/css" />
+		<title>Platformer</title>
+	</head>
+	<body onload="init()">
+		<h1>Cat Jump!</h1>
+		<div class="col-sm-6 col-sm-offset-3">
+			<div class="panel panel-default">
+				<div id="gameWindow">
+					<div id="pc"></div>
+					<div id="npc"></div>
+					<div id="lifebar"></div>
+					<div id="btnContinue" onclick="nextLevel();">CONTINUE</div>
+				</div>
+				<div id="output"></div>
+			</div>
+		</div>
+		<script src=js/gameFunctions.js></script>
+	</body>
+</html>
