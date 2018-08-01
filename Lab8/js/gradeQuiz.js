@@ -5,8 +5,8 @@ $(document).ready(function(){
         }
     );
     
-    var score = 0;
     $("form").submit(function(event) {
+        var score = 0;
         event.preventDefault();
         
         //Get answers
