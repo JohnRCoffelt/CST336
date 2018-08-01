@@ -5,8 +5,9 @@ $(document).ready(function(){
         }
     );
     
+    var score = 0;
     $("form").submit(function(event) {
-        var score = 0;
+
         event.preventDefault();
         
         //Get answers
@@ -55,7 +56,7 @@ $(document).ready(function(){
         $("#score").html(score);
         $("#waiting").html("<img src='img/loading.gif' alt='submitting data' />");
         $("input[type='submit']").css("display","none");
-
+        
         //Submits and stores score, retrieves average score
         $.ajax({
             type : "post",
@@ -75,7 +76,7 @@ $(document).ready(function(){
             }
 
         });//AJAX
-        
+        score = 0;
     }); //formSubmit
     
     //Styles a question as answered correctly
