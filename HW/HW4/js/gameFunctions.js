@@ -170,7 +170,7 @@ function gameloop(){
 	if(hittest($("#pc"), $("#npc"))) {
 		clearInterval(gameTimer);
 		alert('You completed the level!');
-		if(level == 3) {
+		if(level == 3 && numLives > 0) {
 			gameWindow.innerHTML = '<br><br>You win!';
 			gameWindow.className = 'msgGameOver';
 		}
