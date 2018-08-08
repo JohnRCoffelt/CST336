@@ -186,7 +186,9 @@ function gameloop(){
 		removeLife();
 		
 		level--;
-		nextLevel();
+		if(numLives >= 0) {
+		   nextLevel();
+		}
 	}
 }
 
